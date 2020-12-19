@@ -19,4 +19,10 @@ public class Home {
     public String[] checkProfile() {
         return environment.getActiveProfiles();
     }
+
+    @GetMapping({"/msg"})
+    public String getMsg() {
+        return "Auth-By-Passed";
+    }
+
 }
